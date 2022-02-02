@@ -1,5 +1,5 @@
 [package]
-authors = ["Parity Technologies <admin@axiacoin.network>"]
+authors = ["AXIA Technologies <admin@axiacoin.network>"]
 description = "IPC server for JSON-RPC"
 documentation = "https://docs.rs/jsonrpc-ipc-server/"
 edition = "2018"
@@ -15,7 +15,8 @@ log = "0.4"
 tower-service = "0.3"
 jsonrpc-core = { version = "18.0.0", path = "../core" }
 jsonrpc-server-utils = { version = "18.0.0", path = "../server-utils", default-features = false }
-parity-tokio-ipc = "0.9"
+axia-tokio-ipc = { git = "https://github.com/axia-tech/axia-tokio-ipc", branch = "v0.9.0", version = "0.9.0" }
+
 parking_lot = "0.11.0"
 
 [dev-dependencies]

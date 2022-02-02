@@ -1,4 +1,4 @@
-# Parity JSON-RPC
+# AXIA JSON-RPC
 
 Rust implementation of JSON-RPC 2.0 Specification.
 Transport-agnostic `core` and transport servers for `http`, `ipc`, `websockets` and `tcp`.

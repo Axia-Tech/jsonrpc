@@ -9,13 +9,13 @@ use crate::meta::{MetaExtractor, NoopExtractor, RequestContext};
 use crate::select_with_weak::SelectWithWeakExt;
 use futures::channel::oneshot;
 use futures::StreamExt;
-use parity_tokio_ipc::Endpoint;
+use axia_tokio_ipc::Endpoint;
 use parking_lot::Mutex;
 use tower_service::Service as _;
 
 use crate::server_utils::{codecs, reactor, reactor::TaskExecutor, session, tokio_util};
 
-pub use parity_tokio_ipc::SecurityAttributes;
+pub use axia_tokio_ipc::SecurityAttributes;
 
 /// IPC server session
 pub struct Service<M: Metadata = (), S: Middleware<M> = middleware::Noop> {

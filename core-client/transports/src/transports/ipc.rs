@@ -7,7 +7,7 @@ use futures::{SinkExt, StreamExt, TryStreamExt};
 use jsonrpc_server_utils::codecs::StreamCodec;
 use jsonrpc_server_utils::tokio;
 use jsonrpc_server_utils::tokio_util::codec::Decoder as _;
-use parity_tokio_ipc::Endpoint;
+use axia_tokio_ipc::Endpoint;
 use std::path::Path;
 
 /// Connect to a JSON-RPC IPC server.
@@ -39,7 +39,7 @@ mod tests {
 	use crate::*;
 	use jsonrpc_core::{Error, ErrorCode, IoHandler, Params, Value};
 	use jsonrpc_ipc_server::ServerBuilder;
-	use parity_tokio_ipc::dummy_endpoint;
+	use axia_tokio_ipc::dummy_endpoint;
 	use serde_json::map::Map;
 
 	#[test]
